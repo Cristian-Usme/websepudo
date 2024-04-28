@@ -13,12 +13,12 @@ function App() {
     <>
     <ParticleBg />
     <div  className='header'>
-    <div class="logo">
-            <div class="logo-nav">
-                <a href="/" class="imagen"><img src="../../javascript.svg" alt="logo"/></a>
+    <div className="logo">
+            <div className="logo-nav">
+                <a href="/" className="imagen"><img src="../../javascript.svg" alt="logo"/></a>
             </div>
-            <nav class="navbar">
-                <ul class="nav-links">
+            <nav className="navbar">
+                <ul className="nav-links">
                 <li><a href="/">Inicio</a></li>
                     <li><a href="/about">Sobre nosotros</a></li>
                     <li><a href="/events">Eventos</a></li>
