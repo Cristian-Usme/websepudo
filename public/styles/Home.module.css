@@ -1,3 +1,7 @@
+#body {
+    background: linear-gradient(#000000, #080808, #0f0f0f, #131313) ;
+    padding: 3vh;
+}
 .container {
     text-align: center;
     display: flex;
