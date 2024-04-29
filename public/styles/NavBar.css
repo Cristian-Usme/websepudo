@@ -2,7 +2,7 @@
     font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-style: normal;
-}  
+}
 
 .navbar {
     display: flex;
@@ -11,7 +11,7 @@
     justify-content: space-around;
     align-items: center;
     left: 0;
-    background: linear-gradient(to top, #000000, #ff6a00);
+    background-color: #000;
     width: 100%;
     height: 7vh;
     align-content: center;
@@ -27,14 +27,15 @@
     --h: 1.2em;
     line-height: var(--h);
     color: #0000;
-    text-shadow: 
+    text-shadow:
         0 var(--_t, var(--h)) whitesmoke,
         0 0 var(--_c, whitesmoke);
     box-shadow: 0 var(--_t, var(--h)) var(--c);
     clip-path: inset(0 0 0 0);
     background: linear-gradient(var(--c) 0 0) 0 var(--_t, var(--h)) no-repeat;
     transition: 0.1s, clip-path 0.1s 0.1s;
-  }
+}
+
 .nav-links:hover {
     --_t: 0;
     --_c: #0000;

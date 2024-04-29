@@ -35,9 +35,9 @@ const ParticleBg = () => {
         "zIndex": -1
     },
       background: {
-        color: {
-          value: "#000001",
-        },
+        // color: {
+        //   value: "#000001",
+        // },
       },
       fpsLimit: 60,
       interactivity: {
