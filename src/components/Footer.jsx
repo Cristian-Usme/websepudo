@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div>
             <footer className="footer">
-                <div className="container">
+                <div>
                     <p>¡Gracias por visitar nuestro sitio!</p>
                     <p>&copy; 2024 Mi Sitio Web</p>
                     <p>Contacto: 555-555-5555</p>

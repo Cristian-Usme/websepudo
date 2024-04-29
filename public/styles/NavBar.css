@@ -35,7 +35,7 @@
     line-height: var(--h);
     color: #0000;
     text-shadow:
-        0 var(--_t, var(--h)) whitesmoke,
+        0 var(--_t, var(--h)) black,
         0 0 var(--_c, whitesmoke);
     box-shadow: 0 var(--_t, var(--h)) var(--c);
     clip-path: inset(0 0 0 0);

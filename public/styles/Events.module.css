@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3vh;
+    color: black;
+    background-color: #31303064;
+    border: 5px solid black;
+    box-shadow: 0 0 2vh #ff6f00;
+    border-radius: 2vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.thumbnails {
+    text-align: center;
+    display: flex;
+    color: black;
+    background-color: gray;
+    border-radius: 10px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}

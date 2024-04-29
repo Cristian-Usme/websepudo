@@ -1,8 +1,6 @@
-import '../public/styles/Home.css';
-import '../public/styles/NavBar.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
 import About from './views/About';
 import Contact from './views/Contact';
@@ -14,7 +12,7 @@ function App() {
     <div>
       <Router>
         <NavBar />
-        <div className='body'>
+        <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
