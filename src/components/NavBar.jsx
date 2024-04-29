@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../../public/styles/NavBar.css";
+import ParticleBg from './ParticleBg';
 
 const links = [
     {
@@ -27,6 +28,9 @@ const links = [
 const NavBar = () => {
     return (
         <div>
+            <div className="">
+                <ParticleBg />
+            </div>
             <nav className="navbar">
                 {links.map((link) => (
                     <Link className="nav-links jersey-25-regular" key={link.name} to={link.path}>

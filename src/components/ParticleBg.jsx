@@ -31,8 +31,7 @@ const ParticleBg = () => {
     () => ({
         id: "tsparticles",
       "fullScreen": {
-        "enable": false,
-        "zIndex": -1
+        "enable": false
     },
       background: {
         // color: {

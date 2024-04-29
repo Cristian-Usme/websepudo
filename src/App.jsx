@@ -1,6 +1,7 @@
-import '../public/styles/App.css';
+import '../public/styles/Home.css';
+import '../public/styles/NavBar.css';
 import NavBar from './components/NavBar';
-import ParticleBg from './components/ParticleBg';
+// import ParticleBg from './components/ParticleBg';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
@@ -14,14 +15,16 @@ function App() {
     <div>
       <Router>
         <NavBar />
-        <ParticleBg />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/JoinUs" element={<JoinUs />} />
-          <Route path="/Events" element={<Events />} />
-        </Routes>
+        {/* <ParticleBg /> */}
+        <div className='body'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/JoinUs" element={<JoinUs />} />
+            <Route path="/Events" element={<Events />} />
+          </Routes>
+        </div>
       </Router>
       <Footer />
     </div>

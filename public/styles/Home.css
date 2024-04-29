@@ -1,2 +1,7 @@
-.Body{
+.Body {
+    /* float: top;
+    padding: 40vh;
+    text-align: center; */
+    color: rgb(255, 0, 0);
+    z-index: 3;
 }
