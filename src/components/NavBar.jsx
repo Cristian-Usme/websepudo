@@ -28,7 +28,6 @@ const links = [
 const NavBar = () => {
     return (
         <div>
-                <ParticleBg />
             <nav className="navbar">
                 {links.map((link) => (
                     <Link className="nav-links jersey-25-regular" key={link.name} to={link.path}>
@@ -36,6 +35,7 @@ const NavBar = () => {
                     </Link>
                 ))}
             </nav>
+            <ParticleBg />
         </div>
     );
 };
