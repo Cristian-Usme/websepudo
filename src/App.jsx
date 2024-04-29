@@ -1,7 +1,6 @@
 import '../public/styles/Home.css';
 import '../public/styles/NavBar.css';
 import NavBar from './components/NavBar';
-// import ParticleBg from './components/ParticleBg';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
@@ -15,7 +14,6 @@ function App() {
     <div>
       <Router>
         <NavBar />
-        {/* <ParticleBg /> */}
         <div className='body'>
           <Routes>
             <Route path="/" element={<Home />} />

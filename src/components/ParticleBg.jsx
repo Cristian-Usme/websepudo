@@ -33,11 +33,6 @@ const ParticleBg = () => {
       "fullScreen": {
         "enable": false
     },
-      background: {
-        // color: {
-        //   value: "#000001",
-        // },
-      },
       fpsLimit: 60,
       interactivity: {
         events: {
