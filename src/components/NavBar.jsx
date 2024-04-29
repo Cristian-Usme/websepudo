@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../public/styles/App.css";
+import "../../public/styles/NavBar.css";
 
 const links = [
     {
@@ -29,7 +29,7 @@ const NavBar = () => {
         <div>
             <nav className="navbar">
                 {links.map((link) => (
-                    <Link className="nav-link" key={link.name} to={link.path}>
+                    <Link className="nav-links jersey-25-regular" key={link.name} to={link.path}>
                         {link.name}
                     </Link>
                 ))}

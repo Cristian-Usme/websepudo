@@ -1,6 +1,7 @@
 import '../public/styles/App.css';
 import NavBar from './components/NavBar';
 import ParticleBg from './components/ParticleBg';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
 import About from './views/About';
@@ -11,9 +12,9 @@ import Events from './views/Events';
 function App() {
   return (
     <div>
-      <ParticleBg />
       <Router>
         <NavBar />
+        <ParticleBg />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Events" element={<Events />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   )
 }
