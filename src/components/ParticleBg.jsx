@@ -31,13 +31,12 @@ const ParticleBg = () => {
     () => ({
         id: "tsparticles",
       "fullScreen": {
-        "enable": false,
-        "zIndex": -1
+        "enable": false
     },
       background: {
-        color: {
-          value: "#000001",
-        },
+        // color: {
+        //   value: "#000001",
+        // },
       },
       fpsLimit: 60,
       interactivity: {
@@ -79,14 +78,14 @@ const ParticleBg = () => {
             default: "bounce",
           },
           random: false,
-          speed: 6,
+          speed: 4,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 150,
+          value: 500,
         },
         opacity: {
           value: 0.5,
