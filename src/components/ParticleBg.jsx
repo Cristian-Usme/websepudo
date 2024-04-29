@@ -4,6 +4,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 //import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
+import '../../public/styles/NavBar.css';
 
 const ParticleBg = () => {
   const [init, setInit] = useState(false);
@@ -29,14 +30,9 @@ const ParticleBg = () => {
 
   const options = useMemo(
     () => ({
-        id: "tsparticles",
+      id: "tsparticles",
       "fullScreen": {
         "enable": false
-    },
-      background: {
-        // color: {
-        //   value: "#000001",
-        // },
       },
       fpsLimit: 60,
       interactivity: {
@@ -104,11 +100,11 @@ const ParticleBg = () => {
 
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
     );
   }
 
