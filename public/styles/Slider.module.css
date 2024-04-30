@@ -1,0 +1,58 @@
+.container {
+    box-shadow: 0 0 1rem #ff6f00;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 3rem;
+    font-size: 4rem;
+    color: whitesmoke;
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+}
+.leftArrow:hover {
+    font-size: 4.5rem;
+    transition: 1s;
+    color: whitesmoke;
+    opacity: 1;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 3rem;
+    font-size: 4rem;
+    color: whitesmoke;
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+}
+.rightArrow:hover {
+    font-size: 4.5rem;
+    transition: 1s;
+    color: whitesmoke;
+    opacity: 1;
+}
+
+.dotsList {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.dot {
+    margin: 0 0.5vw;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    opacity: 0.5;
+}
+.dot:hover {
+    transition: 0.8s;
+    color: whitesmoke;
+    opacity: 1;
+}
