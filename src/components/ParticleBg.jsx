@@ -23,6 +23,7 @@ const ParticleBg = () => {
       "fullScreen": {
         "enable": false
     },
+    
       fpsLimit: 60,
       interactivity: {
         events: {
