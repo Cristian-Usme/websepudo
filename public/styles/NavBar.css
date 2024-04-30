@@ -11,8 +11,8 @@
 }
 
 .navbar-container {
+    position: absolute;
     width: 100%;
-    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -20,7 +20,7 @@
 }
 
 .navbar {
-    /* position: absolute; */
+
     display: flex;
     overflow: hidden;
     justify-content: space-evenly;
