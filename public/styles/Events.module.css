@@ -11,7 +11,6 @@
     flex-direction: column;
     color: black;
     /* box-shadow: 0 0 2vh #ff6f00; */
-    border-radius: 2vh;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -33,14 +32,15 @@
     border-radius: 10px;
     margin-top: 3vh;
     margin-bottom: 3vh;
+    box-shadow: 0 0 1rem #ff6f00;
 }
 
 .image {
-    position: relative;
-    border-radius: 10px;
     height: 27vh;
     width: 43vh;
     padding: 0vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .title {
