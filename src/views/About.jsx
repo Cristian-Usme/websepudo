@@ -16,12 +16,12 @@ function About() {
                 <section className={styles.sectionButton}>
                     <img className={styles.imagenSection} src="../../public/images/joinUsWeb.svg" alt="JoinUs" />
                     <h1 className={styles.sectionContador}>+5000</h1>
-                    <button className={styles.sectionBotones}>EVENTOS</button>
+                    <button className={styles.sectionBotones}><h3>Eventos</h3></button>
                 </section>
                 <section className={styles.sectionButton}>
                     <img className={styles.imagenSection} src="../../public/images/joinUsWeb.svg" alt="JoinUs" />
                     <h1 className={styles.sectionContador}>+2000</h1>
-                    <button className={styles.sectionBotones}>UNETE</button>
+                    <button className={styles.sectionBotones}><h3>Unete</h3></button>
                 </section>
             </div>
         </div>
