@@ -54,8 +54,8 @@ const ParticleBg = () => {
           color: "#ffffff",
           distance: 150,
           enable: true,
-          opacity: 0.6,
-          width: 1,
+          opacity: 1,
+          width: 1.5,
         },
         move: {
           direction: "none",
@@ -74,7 +74,7 @@ const ParticleBg = () => {
           value: 200,
         },
         opacity: {
-          value: 0.5,
+          value: 1,
         },
         shape: {
           type: "circle",
