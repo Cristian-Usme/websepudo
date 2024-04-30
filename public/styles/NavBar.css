@@ -1,8 +1,7 @@
 #tsparticles {
     width: 100%;
     height: 40vh;
-    background-image: url("../../public/images/banner.png");
-    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../images/BannerTry.jpg");
 }
 
 .jersey-25-regular {
@@ -10,12 +9,14 @@
     font-weight: 400;
     font-style: normal;
 }
-.navbar-container{
+
+.navbar-container {
     width: 100%;
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background: linear-gradient(black, #000000b3, #0000006e, transparent);
 }
 
 .navbar {
@@ -25,7 +26,6 @@
     justify-content: space-evenly;
     align-items: center;
     left: 0;
-    background: linear-gradient(black, #000000b3, #0000006e, transparent);
     width: 60%;
     height: 7vh;
     align-content: center;

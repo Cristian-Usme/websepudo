@@ -5,23 +5,23 @@ import ParticleBg from './ParticleBg';
 
 const links = [
     {
-        name: "Home",
+        name: "Inicio",
         path: "/",
     },
     {
-        name: "About",
+        name: "Nosotros",
         path: "/About",
     },
     {
-        name: "Contact",
+        name: "Contactanos",
         path: "/Contact",
     },
     {
-        name: "JoinUs",
+        name: "Unete",
         path: "/JoinUs",
     },
     {
-        name: "Events",
+        name: "Eventos",
         path: "/Events",
     }
 ];
