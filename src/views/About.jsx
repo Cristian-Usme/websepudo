@@ -1,6 +1,9 @@
+// import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from '../../public/styles/About.module.css';
 
 function About() {
+    const navigate = useNavigate();
     return (
         <div id={styles.body}>
             <div className={styles.contenido}>
@@ -16,12 +19,12 @@ function About() {
                 <section className={styles.sectionButton}>
                     <img className={styles.imagenSection} src="../../public/images/joinUsWeb.svg" alt="JoinUs" />
                     <h1 className={styles.sectionContador}>+5000</h1>
-                    <button className={styles.sectionBotones}><h3>Eventos</h3></button>
+                    <button onClick={() => navigate('/Events')} className={styles.sectionBotones}><h3>Eventos</h3></button>
                 </section>
                 <section className={styles.sectionButton}>
                     <img className={styles.imagenSection} src="../../public/images/joinUsWeb.svg" alt="JoinUs" />
                     <h1 className={styles.sectionContador}>+2000</h1>
-                    <button className={styles.sectionBotones}><h3>Unete</h3></button>
+                    <button onClick={() => navigate('/JoinUs')} className={styles.sectionBotones}><h3>Unete</h3></button>
                 </section>
             </div>
         </div>
