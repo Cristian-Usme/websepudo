@@ -12,9 +12,10 @@
     opacity: 0.5;
     z-index: 1;
     cursor: pointer;
+    transition: 1s;
 }
 .leftArrow:hover {
-    font-size: 4.5rem;
+    font-size: 5rem;
     transition: 1s;
     color: whitesmoke;
     opacity: 1;
@@ -30,9 +31,10 @@
     opacity: 0.5;
     z-index: 1;
     cursor: pointer;
+    transition: 1s;
 }
 .rightArrow:hover {
-    font-size: 4.5rem;
+    font-size: 5rem;
     transition: 1s;
     color: whitesmoke;
     opacity: 1;
@@ -50,9 +52,21 @@
     font-size: 1.5rem;
     color: whitesmoke;
     opacity: 0.5;
+    transition: 0.8s;
 }
 .dot:hover {
     transition: 0.8s;
     color: whitesmoke;
+    opacity: 1;
+}
+
+.activeDot{
+    transition: 0.8s;
+    color: #ff6f00;
+    opacity: 0.75;
+}
+.activeDot:hover{
+    transition: 0.8s;
+    color: #ff7300;
     opacity: 1;
 }

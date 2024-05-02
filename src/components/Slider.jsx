@@ -39,7 +39,7 @@ const Slider = ({slides}) => {
             <div className={styles.dotsList}>{slides.map((slide, slideIndex) => (
                 <div 
                 key={slideIndex}
-                className={styles.dot}
+                className={`${styles.dot} ${slideIndex === currentIndex ? styles.activeDot : ''}`}
                 onClick={() => goToSlide(slideIndex)}>
                     ⦿
                 </div>
