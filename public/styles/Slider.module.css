@@ -67,6 +67,6 @@
 }
 .activeDot:hover{
     transition: 0.8s;
-    color: #ff7300;
+    color: #ff6200;
     opacity: 1;
 }
