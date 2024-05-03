@@ -1,8 +1,14 @@
 import styles from '../../public/styles/Slider.module.css';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Slider = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const intervalId = setInterval(goNext, 5000);
+
+        return () => clearInterval(intervalId);
+    }, [currentIndex, slides]);
 
     const goPrevious = () => {
         const isFirst = currentIndex === 0;
@@ -21,6 +27,7 @@ const Slider = ({slides}) => {
     const containerStyle = {
         height: "100%",
         position: "relative",
+        transition: "height 0.5s ease",
     };
     const sliderStyle = {
         backgroundImage: `url(${slides[currentIndex].url})`,
@@ -29,6 +36,7 @@ const Slider = ({slides}) => {
         borderRadius: "20px",
         backgroundPosition: "center",
         backgroundSize: "cover",
+        transition: "background-image 0.5s ease",
     };
 
     return (
@@ -36,7 +44,7 @@ const Slider = ({slides}) => {
             <div className={styles.leftArrow} onClick={goPrevious}>❮</div>
             <div style={sliderStyle} className={styles.container}></div>
             <div className={styles.rightArrow} onClick={goNext}>❯</div>
-            <div className={styles.dotsList}>{slides.map((slide, slideIndex) => (
+            <div className={styles.navigation}>{slides.map((slide, slideIndex) => (
                 <div 
                 key={slideIndex}
                 className={`${styles.dot} ${slideIndex === currentIndex ? styles.activeDot : ''}`}
