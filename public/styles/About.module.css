@@ -54,6 +54,10 @@
     width: 35vh;
 }
 
+.imagenSectionE{
+    width: 52vh;
+}
+
 .contenidoDos {
     display: flex;
     justify-content: space-around;
@@ -88,11 +92,12 @@
     height: 2rem;
     width: 7rem;
     color:#ff6f00;
-    font-size: 1.3rem;
+    font-size: 2rem;
     background: none;
     border: none;
     border-radius: 0.8rem;
     text-align: center;
+    text-shadow: #ff6f00 0.1em 0.1em 0.2em;
 }
 
 .sectionBotones:hover{

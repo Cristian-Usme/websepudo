@@ -17,7 +17,7 @@ function About() {
             </div>
             <div className={styles.contenidoDos}>
                 <section className={styles.sectionButton}>
-                    <img className={styles.imagenSection} src="../../public/images/joinUsWeb.svg" alt="JoinUs" />
+                    <img className={styles.imagenSectionE} src="../../public/images/cartelCorrecto.png" alt="Events" />
                     <h1 className={styles.sectionContador}>+5000</h1>
                     <button onClick={() => navigate('/Events')} className={styles.sectionBotones}><h3>Eventos</h3></button>
                 </section>
