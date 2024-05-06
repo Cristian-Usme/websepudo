@@ -2,15 +2,44 @@
     background: linear-gradient(#000000, #080808, #0f0f0f, #131313) ;
     padding: 3vh;
 }
+
+.title {
+    font-family: "Jersey 25", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
 .container {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 50px;
     color: black;
-    background-color: blue;
-    border: 5px solid whitesmoke;
-    border-radius: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.image {
+    height: 58vh;
+    width: 90vw;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem #ff6f00;
+    margin-bottom: 2rem;
+}
+
+.contactItems {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes {
+    height: 60vh;
+    width: 29vw;
+    box-shadow: 0 0 1rem #ff6f00;
+    border-radius: 15px;
 }
