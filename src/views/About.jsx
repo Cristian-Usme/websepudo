@@ -16,16 +16,25 @@ function About() {
                 <img className={styles.imagen} src="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/uploads/2023/11/concierto-karol-g.jpg" alt="Imagen de prueba" />
             </div>
             <div className={styles.contenidoDos}>
-                <section className={styles.sectionButton}>
-                    <img className={styles.imagenSectionE} src="../../public/images/cartelCorrecto.png" alt="Events" />
-                    <h1 className={styles.sectionContador}>+5000</h1>
-                    <button onClick={() => navigate('/Events')} className={styles.sectionBotones}><h3>Eventos</h3></button>
+                <section>
+                    <button onClick={() => navigate('/Events')} className={styles.borderButton}>
+                        <section className={styles.sectionButton}>
+                            <img className={styles.imagenSectionE} src="../../public/images/cartelCorrecto.png" alt="Events" />
+                            <h1 className={styles.sectionContador}>+5000</h1>
+                            <button className={styles.sectionBotones}><h3>Eventos</h3></button>
+                        </section>
+                    </button>
                 </section>
-                <section className={styles.sectionButton}>
-                    <img className={styles.imagenSection} src="../../public/images/joinUsWeb.svg" alt="JoinUs" />
-                    <h1 className={styles.sectionContador}>+2000</h1>
-                    <button onClick={() => navigate('/JoinUs')} className={styles.sectionBotones}><h3>Unete</h3></button>
+                <section>
+                    <button onClick={() => navigate('/JoinUs')} className={styles.borderButton}>
+                        <section className={styles.sectionButton}>
+                            <img className={styles.imagenSection} src="../../public/images/joinUsWeb.svg" alt="JoinUs" />
+                            <h1 className={styles.sectionContador}>+2000</h1>
+                            <button className={styles.sectionBotones}><h3>Unete</h3></button>
+                        </section>
+                    </button>
                 </section>
+
             </div>
         </div>
     );
