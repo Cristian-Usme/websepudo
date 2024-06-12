@@ -12,8 +12,9 @@ function Events() {
     return (
         <div id={styles.body}>
             <h1 className={styles.title}>NUESTROS EVENTOS</h1>
-            <div className={styles.container}>
             <Carousel />
+            <div className={styles.container}>
+            
                 <div className={styles.row}>
                     <section className={styles.thumbnails}>
                         <img className={styles.image} alt="1" src="https://img.freepik.com/foto-gratis/luz-brillante-escenario-ilumina-entusiastas-fanaticos-rock-generados-ia_188544-37983.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714348800&semt=sph"/>
