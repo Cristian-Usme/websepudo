@@ -8,11 +8,11 @@ function Carousel({ slides }) {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 4500,
+    speed: 5000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
   };
   return (
     <div>

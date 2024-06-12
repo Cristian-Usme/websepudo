@@ -10,24 +10,19 @@ function Events() {
             img: "https://img.freepik.com/foto-gratis/luz-brillante-escenario-ilumina-entusiastas-fanaticos-rock-generados-ia_188544-37983.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714348800&semt=sph"
         },
         {
-            artist: "SHADDAI",
-            city: "Arboletes",
+            artist: "KAROL G",
+            city: "Bogotá",
             img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
         },
         {
-            artist: "SHADDAI",
-            city: "Arboletes",
-            img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
+            artist: "DIOMEDES",
+            city: "Ibiza",
+            img: "https://cc-prod.scene7.com/is/image/CCProdAuthor/concert-photography_P1_900x420?$pjpeg$&jpegSize=200&wid=900"
         },
         {
-            artist: "SHADDAI",
-            city: "Arboletes",
-            img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
-        },
-        {
-            artist: "SHADDAI",
-            city: "Arboletes",
-            img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
+            artist: "PESO PLUMA",
+            city: "Madrid",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ud7B6vVH31RZ_aC1XvR7brvkYrVfvdFV1MHVuV-kYHmlxLosydaVznh0J9QQj8OpWMw&usqp=CAU"
         }
     ];
     const slides = [
