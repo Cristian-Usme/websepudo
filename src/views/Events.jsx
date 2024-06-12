@@ -3,6 +3,33 @@ import Slider from '../components/Slider';
 import Carousel from '../components/Carousel';
 
 function Events() {
+    const eventSlides = [
+        {
+            artist: "BAD BUNNY",
+            city: "Medellín",
+            img: "https://img.freepik.com/foto-gratis/luz-brillante-escenario-ilumina-entusiastas-fanaticos-rock-generados-ia_188544-37983.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714348800&semt=sph"
+        },
+        {
+            artist: "SHADDAI",
+            city: "Arboletes",
+            img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
+        },
+        {
+            artist: "SHADDAI",
+            city: "Arboletes",
+            img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
+        },
+        {
+            artist: "SHADDAI",
+            city: "Arboletes",
+            img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
+        },
+        {
+            artist: "SHADDAI",
+            city: "Arboletes",
+            img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
+        }
+    ];
     const slides = [
         {url: "https://img.freepik.com/foto-gratis/luz-brillante-escenario-ilumina-entusiastas-fanaticos-rock-generados-ia_188544-37983.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714348800&semt=sph", title: "1"},
         {url: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg", title: "2"},
