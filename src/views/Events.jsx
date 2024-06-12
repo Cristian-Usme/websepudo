@@ -39,7 +39,7 @@ function Events() {
     return (
         <div id={styles.body}>
             <h1 className={styles.title}>NUESTROS EVENTOS</h1>
-            <Carousel />
+            <Carousel slides={eventSlides}/>
             <div className={styles.container}>
             
                 <div className={styles.row}>
