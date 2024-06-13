@@ -8,18 +8,18 @@ function Carousel({ slides }) {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 5000,
+    speed: 4000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2000,
   };
   return (
     <div>
-      <div>
+      <div className={styles.Carousel}>
         <Slider {...settings}>
           {slides.map((event) => (
-            <div>
+            <div key={event.id}> 
               <section className={styles.thumbnails}>
                 <img className={styles.image} alt="img" src={event.img}/>
                 <h2 className={styles.title}>{event.artist}</h2>

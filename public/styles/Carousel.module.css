@@ -1,6 +1,5 @@
 .Carousel{
-    position: relative;
-    z-index: 1000;
+    margin:   0vh 2vw;
 }
 h3{
     color: whitesmoke;
