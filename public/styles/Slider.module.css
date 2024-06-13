@@ -1,6 +1,10 @@
+/* Estilo del componente Slider */
+
 .container {
-    box-shadow: 0 0 1rem #ff6f00;
+    background: linear-gradient(#000000, #080808, #0f0f0f, #131313);
 }
+
+/* Resto del estilo del Slider */
 
 .leftArrow {
     position: absolute;
@@ -60,13 +64,44 @@
     opacity: 1;
 }
 
-.activeDot{
+.activeDot {
     transition: 0.8s;
     color: #ff6f00;
     opacity: 0.75;
 }
-.activeDot:hover{
+.activeDot:hover {
     transition: 0.8s;
     color: #ff6200;
     opacity: 1;
+}
+
+/* Estilo para oscurecer las imágenes */
+
+.sliderImage {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.sliderImage img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Opcional: añade bordes redondeados */
+}
+
+.sliderImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de superposición semi-transparente */
+    transition: opacity 0.5s ease; /* Transición suave */
+    opacity: 0; /* Inicialmente oculto */
+}
+
+.sliderImage:hover::before {
+    opacity: 0.7; /* Opacidad más baja al pasar el cursor */
 }
