@@ -38,14 +38,18 @@
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* text-align: center; */
     width: 45vw;
     height: 45vh;
     border: #F25C05 2px solid;
     border-radius: 10px;
+    padding: 2rem;
+    /* box-sizing: border-box;  */
 }
+
+
 
 .event:nth-child(odd) .info {
     margin-left: 5vw;
@@ -61,11 +65,36 @@
     text-align: center;
 }
 
+.info .title{
+    font-size: 3rem;
+    margin: 0;
+    font-family: "Jersey 25", sans-serif;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.artist {
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.nameAndCountry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .city {
     font-family: "Great Vibes", cursive;
     color: #F25C05;
-    margin: 1vh;
+    margin:  1rem 0 1rem 0.6rem;
+    padding-top: 0.5rem;
     text-shadow: 0 0 0.5rem #F25C05;
+    text-align: left;
+    font-size: 1.5rem;
 }
 
 .description {

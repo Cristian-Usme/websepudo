@@ -5,6 +5,7 @@ function Events() {
     const eventSlides = [
         {
             id: 1,
+            conciert:"NADIE SABE LO QUE VA A PASAR",
             artist: "BAD BUNNY",
             city: "Medellín",
             description: "Concierto en el estadio Atanasio Girardot",
@@ -12,20 +13,23 @@ function Events() {
         },
         {
             id: 2,
+            conciert:"MAÑANA SERÁ MAS BONITO",
             artist: "KAROL G",
             city: "Bogotá",
-            description: "Presentación en el parque Simón Bolívar",
+            description: "Presentación en el parque Simón Bolívar ghghggffggfgvjkhunjk  jipoijknuyftrdvbjopiuyfghv bjkliouythgfvnbhjkuiyuhgbnmjkjnbmjkhjbnm,jklhjbmn",
             img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
         },
         {
             id: 3,
+            conciert:"FERXXO CALIPSIS",
             artist: "DIOMEDES",
             city: "Ibiza",
-            description: "Evento en la famosa discoteca Pacha",
+            description: "Evento en la famosa discoteca Pacha jdjashdjkashdkjhasjdha jskhdkashdjkashjdhasudhjakshafyuehf adsjfhdasjkfhuiewhfuiahdsjk",
             img: "https://redmas.com.co/__export/1712706938307/sites/redmas/img/2024/04/09/feid-nuevas-fechas-concierto.jpg_1841751969.jpg"
         },
         {
             id: 4,
+            conciert:"PESO PLUMA",
             artist: "PESO PLUMA",
             city: "Madrid",
             description: "Concierto en el WiZink Center",
@@ -44,8 +48,11 @@ function Events() {
                     <div key={event.id} className={styles.event}>
                         <img className={styles.image} alt={event.artist} src={event.img} />
                         <div className={styles.info}>
-                            <h2 className={styles.title}>{event.artist}</h2>
-                            <h3 className={styles.city}>{event.city}</h3>
+                            <h2 className={styles.title}>{event.conciert}</h2>
+                            <section className={styles.nameAndCountry}>
+                                <h2 className={styles.artist}>{event.artist} en </h2>
+                                <h3 className={styles.city}>{event.city}</h3>
+                            </section>
                             <p className={styles.description}>{event.description}</p>
                         </div>
                     </div>
