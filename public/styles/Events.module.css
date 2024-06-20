@@ -76,9 +76,14 @@
 .artist {
     font-size: 2rem;
     margin: 0;
-    font-family: "Roboto Condensed", sans-serif;
-    color: whitesmoke;
+    font-family: "Jersey 25", sans-serif;
+    color: black;
     text-align: left;
+    text-shadow:
+    1px 1px 0 #F25C05,
+    -1px 1px 0 #F25C05,
+    -1px -1px 0 #F25C05,
+    1px -1px 0 #F25C05;
 }
 
 .nameAndCountry {
