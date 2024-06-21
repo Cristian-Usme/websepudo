@@ -12,7 +12,7 @@ export const eventSlides = [
         conciert: "NADIE SABE LO QUE VA A PASAR",
         artist: "BAD BUNNY",
         city: "Medellín",
-        description: "Concierto en el estadio Atanasio Girardot",
+        description: "Concierto en el estadio Atanasio Girardot jdkaskdkasdjksdhjfbafbyasbdhabsdchbsahcdbahsjbcasbdchjbasdhcjbadsljcblhsadbcahsbdclcblhbaschbasdchjdbdlahcbhasbclhbaslcbhdasbclhbashdcbalhbchlbhsbadchjbasdhvbhdsbvhjcxbvhjbvbdvhbhcbvhjzvbhjbzvhzhjxvblbhjzxvbzlbvhjlzbxvhlzbvhcxnasjdhjkasdjkasdjkbashbchjasbchjshjcbhjxzcbhjzbxhjc bczxhjc bhjz bhjzx hbzxhj bxhj bhjzb hjxzchjbxzhjcbshjabdfhcsdfhusebfhbsdhgfcsdbc sdsufgseuf hshfusgfusfh syuf sudfh sfyusgfusdf",
         img: "https://img.freepik.com/foto-gratis/luz-brillante-escenario-ilumina-entusiastas-fanaticos-rock-generados-ia_188544-37983.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714348800&semt=sph"
     },
     {

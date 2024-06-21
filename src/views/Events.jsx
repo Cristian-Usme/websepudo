@@ -3,9 +3,6 @@ import Carousel from '../components/Carousel';
 import { eventSlides } from '../js/slidesData';
 
 function Events() {
-    
-
-
 
     return (
         <div id={styles.body}>
