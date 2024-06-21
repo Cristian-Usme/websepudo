@@ -1,16 +1,170 @@
+:root {
+    --fontTitle: "Roboto Condensed", sans-serif;
+    --fontText: "Syne", sans-serif;
+    --fontBottom: "Great Vibes", cursive;
+}
+
 #body {
-    background: linear-gradient(#000000, #080808, #0f0f0f, #131313) ;
+    background: linear-gradient(#000000, #080808, #0f0f0f, #131313);
     padding: 3vh;
 }
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    border-bottom: #FBFBFB 2px solid;
+    padding-bottom: 8rem;
+}
+
 .container {
-    text-align: center;
+    height: 50vh;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 50px;
-    color: black;
-    background-color: gray;
-    border: 5px solid whitesmoke;
+    color: #FBFBFB;
+}
+
+.container h1 {
+    font-family: var(--fontTitle);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container p {
+    font-family: var(--fontText);
+    font-size: 1.5rem;
+}
+
+.imagen {
+    width: 50%;
     border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 0 2vh #ff6f00;
+    border-radius: 2vh;
+}
+
+.imagenSection {
+    width: 35vh;
+}
+
+.imagenSectionE {
+    width: 52vh;
+}
+
+.contenidoDos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    padding-bottom: 8rem;
+    border-bottom: #FBFBFB 2px solid;
+    margin-bottom: 5rem;
+}
+
+.sectionContador {
+    color: #FBFBFB;
+    font-size: 4.5rem;
+    font-family: var(--fontText);
+    margin-bottom: 3rem;
+}
+
+.sectionButton {
+    background-color: #000000;
+    cursor: pointer;
+    border: none;
+    width: 25rem;
+    height: 30rem;
+    text-shadow: #ff6f00 0.2em 0.2em 0.3em;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionBotones {
+    font-family: var(--fontBottom);
+    height: 2rem;
+    width: 7rem;
+    color: #ff6f00;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.borderButton {
+    border: none;
+    width: 25rem;
+    height: 30rem;
+    margin-top: 5rem;
+    border-radius: 1.5rem;
+    position: relative;
+}
+
+.borderButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            #ff6f00,
+            #FBFBFB,
+            #000000,
+            #ff6f00
+            );
+    background-size: 800%;
+    border-radius: 1rem;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.title {
+    font-family: "Jersey 25", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 6rem;
+}
+
+.slider {
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.sectionSlider {
+    margin-bottom: 2rem;
 }

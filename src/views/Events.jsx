@@ -1,41 +1,9 @@
 import styles from '../../public/styles/Events.module.css';
 import Carousel from '../components/Carousel';
+import { eventSlides } from '../js/slidesData';
 
 function Events() {
-    const eventSlides = [
-        {
-            id: 1,
-            conciert:"NADIE SABE LO QUE VA A PASAR",
-            artist: "BAD BUNNY",
-            city: "Medellín",
-            description: "Concierto en el estadio Atanasio Girardot",
-            img: "https://img.freepik.com/foto-gratis/luz-brillante-escenario-ilumina-entusiastas-fanaticos-rock-generados-ia_188544-37983.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1714348800&semt=sph"
-        },
-        {
-            id: 2,
-            conciert:"MAÑANA SERÁ MAS BONITO",
-            artist: "KAROL G",
-            city: "Bogotá",
-            description: "Presentación en el parque Simón Bolívar ghghggffggfgvjkhunjk  jipoijknuyftrdvbjopiuyfghv bjkliouythgfvnbhjkuiyuhgbnmjkjnbmjkhjbnm,jklhjbmn",
-            img: "https://www.bbva.com/wp-content/uploads/2020/05/festival2.jpg"
-        },
-        {
-            id: 3,
-            conciert:"FERXXO CALIPSIS",
-            artist: "DIOMEDES",
-            city: "Ibiza",
-            description: "Evento en la famosa discoteca Pacha jdjashdjkashdkjhasjdha jskhdkashdjkashjdhasudhjakshafyuehf adsjfhdasjkfhuiewhfuiahdsjk",
-            img: "https://redmas.com.co/__export/1712706938307/sites/redmas/img/2024/04/09/feid-nuevas-fechas-concierto.jpg_1841751969.jpg"
-        },
-        {
-            id: 4,
-            conciert:"PESO PLUMA",
-            artist: "PESO PLUMA",
-            city: "Madrid",
-            description: "Concierto en el WiZink Center",
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Ud7B6vVH31RZ_aC1XvR7brvkYrVfvdFV1MHVuV-kYHmlxLosydaVznh0J9QQj8OpWMw&usqp=CAU"
-        }
-    ];
+    
 
 
 
