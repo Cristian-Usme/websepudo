@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from '../../public/styles/Slider.module.css';
 
+
 const Slider = ({ slides = [] }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
