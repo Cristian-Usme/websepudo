@@ -24,11 +24,11 @@ const Footer = () => {
                     </div>
                     <div className={styles.socialNetworks}>
                         <h2>Redes sociales</h2>
-                        <a className={styles.lblA} href="https://www.instagram.com/" target="_blank"><i className="fa-brands fa-square-instagram"></i><span>Instagram</span></a>
-                        <a className={styles.lblA} href="https://www.linkedin.com/" target="_blank"><i className="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
-                        <a className={styles.lblA} href="https://www.facebook.com/" target="_blank"><i className="fa-brands fa-square-facebook"></i><span>Facebook</span></a>
-                        <a className={styles.lblA} href="https://twitter.com/" target="_blank"><i className="fa-brands fa-square-x-twitter"></i><span>X</span></a>
-                        <a className={styles.lblA} href="https://www.whatsapp.com/" target="_blank"><i className="fa-brands fa-square-whatsapp"></i><span>WhatsApp</span></a>
+                        <a className={styles.lblA} href="https://www.instagram.com/" target="_blank"><i className="fa-brands fa-square-instagram"></i><span className={styles.lblSpan}>Instagram</span></a>
+                        <a className={styles.lblA} href="https://www.linkedin.com/" target="_blank"><i className="fa-brands fa-linkedin"></i><span className={styles.lblSpan}>LinkedIn</span></a>
+                        <a className={styles.lblA} href="https://www.facebook.com/" target="_blank"><i className="fa-brands fa-square-facebook"></i><span className={styles.lblSpan}>Facebook</span></a>
+                        <a className={styles.lblA} href="https://twitter.com/" target="_blank"><i className="fa-brands fa-square-x-twitter"></i><span className={styles.lblSpan}>X</span></a>
+                        <a className={styles.lblA} href="https://www.whatsapp.com/" target="_blank"><i className="fa-brands fa-square-whatsapp"></i><span className={styles.lblSpan}>WhatsApp</span></a>
                     </div>
                     <div>
                         <h2>Equipo de desarrollo</h2>
