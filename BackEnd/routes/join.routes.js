@@ -11,13 +11,6 @@ router.use(
     })
 );
 
-// router.use(
-//     bodyParser.urlencoded({
-//         limit: "50mb",
-//         extended: true,
-//     })
-// );
-
 router.use(upload.array());
 
 router.get('/', async (req, res) => {
