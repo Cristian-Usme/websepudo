@@ -1,0 +1,45 @@
+html
+  head
+    title Mail Content
+    style.
+      body {
+        color: whitesmoke;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+      }
+      .orange-box {
+        width: 100%;
+        padding: 20px;
+        background-color: orange;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .orange-box h1 {
+        color: black;
+        margin: 0 10px;
+      }
+      .black-box {
+        width: 100%;
+        padding: 20px;
+        color: whitesmoke;
+        background-color: black;
+        text-align: left;
+      }
+  body
+    div.orange-box
+      h1=name
+      h1=lastname
+    div.black-box
+      h3=age
+      h4=message
+      br
+      br
+      p=email
+      p=phone

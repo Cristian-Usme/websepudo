@@ -16,9 +16,17 @@ function JoinUs() {
 
     const sendData = async (data) => {
         try {
+            const fileInput = document.querySelector('input[type="file"]');
+            const file = fileInput.files[0];
+
             const formData = new FormData();
             for (const key in data) {
-                formData.append(key, data[key]);
+                if (key === "cv") {
+                    formData.append(key, data[key][0]);
+                    console.log(data[key][0].name);
+                } else {
+                    formData.append(key, data[key]);
+                }
             }
 
             const response = await fetch(backend + "/join", {
