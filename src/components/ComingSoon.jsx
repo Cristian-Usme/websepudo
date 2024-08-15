@@ -12,7 +12,8 @@ const ComingSoon = () => {
                         </h2>
                     </div>
                     <div className={style.right}>
-                        <button className={style.button} onClick={() => window.location.href = 'ruta-a-tu-destino'}>
+                        <button className={style.button} 
+                        onClick={() => window.open('https://www.google.com/intl/en-GB/forms/about/', '_blank')}>
                             Únete Ahora
                         </button>
                     </div>

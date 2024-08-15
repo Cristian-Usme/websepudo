@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import styles from "../../public/styles/JoinUs.module.css";
 import { ageValidator } from "../js/validators";
@@ -19,12 +19,17 @@ function JoinUs() {
             const fileInput = document.querySelector('input[type="file"]');
             const file = fileInput.files[0];
 
+            // Validación adicional del tipo de archivo
+            if (file.type !== "application/pdf") {
+                Swal.fire("Error", "Solo se permiten archivos PDF", "error");
+                return;
+            }
+
             const formData = new FormData();
+            formData.append("cv", file); // El archivo ya fue validado
+
             for (const key in data) {
-                if (key === "cv") {
-                    formData.append(key, data[key][0]);
-                    console.log(data[key][0].name);
-                } else {
+                if (key !== "cv") {
                     formData.append(key, data[key]);
                 }
             }
@@ -35,8 +40,7 @@ function JoinUs() {
             });
 
             if (response.status === 200) {
-                const result = await response.json();
-                console.log(result);
+                // const result = await response.json();
                 Swal.fire("Datos enviados exitosamente", "", "success");
             } else {
                 Swal.fire("Error al procesar los datos", "", "error");
@@ -45,8 +49,10 @@ function JoinUs() {
             reset();
         } catch (error) {
             console.error("Error al enviar datos al backend:", error);
+            Swal.fire("Error", "Hubo un problema al enviar los datos", "error");
         }
     };
+
 
     return (
         <div id={styles.body}>
@@ -191,10 +197,15 @@ function JoinUs() {
                             <input
                                 {...register("cv", {
                                     required: "Hoja de vida requerida",
+                                    validate: {
+                                        fileType: (files) => files[0]?.type === "application/pdf" || "Solo se permiten archivos PDF",
+                                    }
                                 })}
                                 className={`${styles.input} ${styles.inputCV}`}
                                 type="file"
+                                accept=".pdf"
                             />
+
                             {errors.cv && (
                                 <p className={styles.error}>
                                     {errors.cv.message}
