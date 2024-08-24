@@ -1,45 +1,50 @@
 import { Link } from "react-router-dom";
 import "../../public/styles/NavBar.css";
-import ParticleBg from './ParticleBg';
+import ParticleBg from "./ParticleBg";
 
 const links = [
     {
-        name: "Inicio",
+        name: "INICIO",
         path: "/",
     },
     {
-        name: "Contactanos",
+        name: "CONTÁCTANOS",
         path: "/Contact",
     },
     {
-        name: "Unete",
+        name: "ÚNETE",
         path: "/JoinUs",
     },
     {
-        name: "Eventos",
+        name: "EVENTOS",
         path: "/Events",
-    }
+    },
 ];
 
 const NavBar = () => {
     return (
         <div>
-            
             <div className="navbar-container">
-            <div className="logo"><img src="../../public/vite.svg" alt="logo" /></div>
-            
+                <div className="logo">
+                    <img src="../../public/vite.svg" alt="logo" />
+                </div>
+
                 <nav className="navbar">
                     {links.map((link) => (
-                        <Link className="nav-links jersey-25-regular" key={link.name} to={link.path}>
+                        <Link
+                            className="nav-links jersey-25-regular"
+                            key={link.name}
+                            to={link.path}
+                        >
                             {link.name}
                         </Link>
-                        ))}
+                    ))}
                 </nav>
             </div>
-            
+
             <ParticleBg />
         </div>
     );
 };
 
-export default NavBar
+export default NavBar;

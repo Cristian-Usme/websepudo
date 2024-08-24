@@ -53,11 +53,10 @@ function JoinUs() {
         }
     };
 
-
     return (
         <div id={styles.body}>
             <section className={styles.container}>
-                <h1 className={styles.title}>UNETE</h1>
+                <h1 className={styles.title}>ÚNETE</h1>
                 <p className={styles.text}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                     sequi excepturi tempore delectus autem voluptatibus, vel
@@ -198,8 +197,11 @@ function JoinUs() {
                                 {...register("cv", {
                                     required: "Hoja de vida requerida",
                                     validate: {
-                                        fileType: (files) => files[0]?.type === "application/pdf" || "Solo se permiten archivos PDF",
-                                    }
+                                        fileType: (files) =>
+                                            files[0]?.type ===
+                                                "application/pdf" ||
+                                            "Solo se permiten archivos PDF",
+                                    },
                                 })}
                                 className={`${styles.input} ${styles.inputCV}`}
                                 type="file"

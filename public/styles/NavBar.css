@@ -30,7 +30,7 @@
     align-items: center;
     left: 0;
     width: 60%;
-    height: 7vh;
+    height: 10vh;
     align-content: center;
     font-size: 25px;
 }
@@ -51,10 +51,12 @@
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    border-radius: 20px;
+    transition: 0.5s;
 }
 
 .nav-links:hover {
     background-color: #ff7f0e;
     color: black;
-    border-radius: 1rem;
+    transition: 0.5s;
 }

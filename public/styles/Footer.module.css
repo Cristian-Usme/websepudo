@@ -40,6 +40,7 @@
 
 .right {
     display: flex;
+    color: whitesmoke;
     justify-content: center;
-    background-color: gray;
+    background-color: #313030;
 }
