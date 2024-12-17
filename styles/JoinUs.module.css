@@ -1,0 +1,223 @@
+:root {
+    --fontTitle: "Roboto Condensed", sans-serif;
+    --fontText: "Syne", sans-serif;
+    --fontBottom: "Great Vibes", cursive;
+}
+
+
+#body {
+    background: linear-gradient(#000000, #080808, #0f0f0f, #131313);
+    padding: 3vh;
+}
+
+.container {
+    text-align: center;
+    flex-direction: column;
+    margin: 0 5rem 0 5rem;
+    color: white;
+    width: 90vw;
+    padding-left: -3vw;
+}
+
+.title {
+    font-family: var(--fontTitle);
+    font-size: 5rem;
+}
+
+.text {
+    font-family: var(--fontText);
+    font-size: 1.5rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0 3rem 0;
+    font-family: var(--fontTitle);
+}
+
+.imagen {
+    width: 65%;
+    z-index: 0;
+}
+
+.form {
+    width: 30%;
+    color: #fefefe;
+    margin-left: 5rem;
+    z-index: 1;
+    position: relative;
+    margin-right: 10rem
+}
+
+.label {
+    font-family: var(--fontText);
+    position: absolute;
+    left: 0;
+    top: -0.5rem;
+    transition: top 0.2s ease-out;
+    font-size: 16px;
+    line-height: 1;
+    padding-left: 0.5rem;
+    transition: all 0.2s ease-out;
+}
+
+
+
+.subTitle {
+    font-family: var(--fontBottom);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    text-shadow: #ff6f00 0.1em 0.1em 0.2em;
+}
+
+
+.inputsName {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.input {
+    position: relative;
+    width: 30vw;
+    border: none;
+    border-bottom: #ff6f00 2px solid;
+    background-color: transparent;
+    font-family: var(--fontText);
+    font-size: 1.2rem;
+    color: #ff6f00;
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0.2rem;
+}
+
+
+.inputN {
+    position: relative;
+    width: 13vw;
+    border: none;
+    border-bottom: #ff6f00 2px solid;
+    background-color: transparent;
+    font-family: var(--fontText);
+    font-size: 1.2rem;
+    color: #ff6f00;
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0.2rem;
+}
+
+.labelFN {
+    margin-right: 2vw;
+}
+
+
+.inputFN {
+    margin-right: 2vw;
+}
+
+.inputM {
+    margin-top: 1rem;
+}
+
+.inputCV {
+    color: transparent;
+}
+
+
+::-webkit-file-upload-button {
+    display: none;
+}
+
+input:focus {
+    outline: none;
+    color: #fefefe;
+}
+
+.inputs {
+    position: relative;
+    color: #fefefe;
+}
+
+.label {
+    font-family: var(--fontText);
+    position: absolute;
+    left: 0;
+    top: -0.5rem;
+    /* transition: top 0.2s ease-out; */
+    font-size: 16px;
+    line-height: 1;
+    padding-left: 0.5rem;
+    transition: all 0.2s ease-out;
+}
+
+
+.inputs:focus-within .label,
+.input:not(:placeholder-shown) + .label {
+    transform: translateY(-1.5rem);
+    font-size: 1-5rem;
+    color: #ff6f00;
+    text-shadow: #ff6f00 0.1em 0.1em 0.2em; 
+    margin-top: 0.5rem;
+}
+
+
+.error{
+    color: red;
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--fontText);
+    font-size: 0.8rem;
+}
+
+.button {
+    background-color: #ff6f00;
+    border: none;
+    color: #fefefe;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: var(--fontBottom);
+    position: relative;
+    margin-left: 40%;
+}
+
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            #FBFBFB,
+            #000000,
+            #ff6f00,
+            #FBFBFB
+            );
+    background-size: 800%;
+    border-radius: 1rem;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

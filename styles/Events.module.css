@@ -1,0 +1,110 @@
+#body {
+    background: linear-gradient(#000000, #080808, #0f0f0f, #131313);
+    padding: 3vh;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin: 3rem 5vw;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.event:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.image {
+    height: 45vh;
+    width: 45vw;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 45vh;
+    border: #F25C05 2px solid;
+    border-radius: 10px;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.info::-webkit-scrollbar {
+    width: 8px;
+}
+
+.info::-webkit-scrollbar-thumb {
+    background-color: #F25C05;
+    border-radius: 4px;
+    
+}
+
+.event:nth-child(odd) .info {
+    margin-left: 5vw;
+}
+
+.event:nth-child(even) .info {
+    margin-right: 5vw;
+}
+
+.title {
+    font-family: "Jersey 25", sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.info .title {
+    font-size: 3rem;
+    margin: 0;
+    font-family: "Jersey 25", sans-serif;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.artist {
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Jersey 25", sans-serif;
+    color: black;
+    text-align: left;
+    text-shadow:
+    1px 1px 0 #F25C05,
+    -1px 1px 0 #F25C05,
+    -1px -1px 0 #F25C05,
+    1px -1px 0 #F25C05;
+}
+
+.nameAndCountry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.city {
+    font-family: "Great Vibes", cursive;
+    color: #F25C05;
+    margin:  1rem 0 1rem 0.6rem;
+    padding-top: 0.5rem;
+    text-shadow: 0 0 0.5rem #F25C05;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.description {
+    font-family: "Syne", sans-serif;
+    color: whitesmoke;
+    text-align: left;
+    overflow-wrap: break-word;
+}
